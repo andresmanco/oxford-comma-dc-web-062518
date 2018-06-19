@@ -7,7 +7,6 @@ def oxford_comma(array)
     backup = str.pop
     str.push("and #{backup}")
     str.join
-    end
   end
   return array.join
 end

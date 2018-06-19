@@ -3,7 +3,9 @@ def oxford_comma(array)
     return array.join(" and ")
   elsif array.count > 2
   n=1
-    if 
+  array.each do |a|
+    if n == array.size
+      
     return array.join(", ")
     end
   end

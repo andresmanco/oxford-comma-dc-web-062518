@@ -3,8 +3,8 @@ def oxford_comma(array)
     return array.join(" and ")
   elsif array.count > 2
     str = array.join(", ")
-    str.split(', ')
-    backup = str.pop
+    array = str.split(', ')
+    backup = array.pop
     str.push("and #{backup}")
     str.join
   end

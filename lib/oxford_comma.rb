@@ -4,6 +4,9 @@ def oxford_comma(array)
   elsif array.count > 2
     str = array.join(", ")
     str.split
+    backup = str.pop
+    str.push("and #{backup}")
+    str.join
     end
   end
   return array.join

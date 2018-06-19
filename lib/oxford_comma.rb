@@ -5,8 +5,8 @@ def oxford_comma(array)
     str = array.join(", ")
     array = str.split(', ')
     backup = array.pop
-    str.push("and #{backup}")
-    str.join
+    array.push("and #{backup}")
+    str = array.join(', ')
   end
   return array.join
 end
